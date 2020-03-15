@@ -1,0 +1,5 @@
+.custom-nav{
+  background: blue;
+  position: relative;
+  width: 100%;
+}

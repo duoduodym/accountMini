@@ -1,0 +1,35 @@
+
+<wxs src="./validate.wxs" module="tools" />
+<view class="container">
+  <view class="bg">
+    <view class="info-wrap">
+      <image class="avatar" src="{{avatarSrc}}"></image>
+      <text class="tips" wx:if="{{!isLogin}}">登录获取更多信息</text>
+      <view class="info" wx:else>
+        <view class="info-item">
+          <text>{{userInfo.nickName}}</text>
+          <image class="sex-img" src="{{sexSrc}}"></image>
+        </view>
+        <view class="info-item">
+          <text class="roleName fc-c">职位:<text class="ml-20">老板</text></text>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+<button
+  open-type="getUserInfo"
+  bindgetuserinfo="bindGetUserInfo"
+  class='big-btn'
+  wx:if="{{!isLogin}}"
+>
+微信授权登录
+</button>
+<button
+wx:else
+  class='big-btn'
+>
+退出登录
+</button>
+<bindingCode bind:bindingSuccess="bindingSuccess" wx:if="{{showCodeWrap}}"/>
+</view>

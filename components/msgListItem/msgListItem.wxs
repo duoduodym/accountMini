@@ -1,0 +1,22 @@
+var formatState = function(val){
+  var str = ''
+  if(val == 1){
+    str =  '审核通过'
+  }else{
+    str =  '审核未通过'
+  }
+  return str
+}
+var formatRead = function (val) {
+  var str = ''
+  if (val == 1) {
+    str = '已读'
+  } else {
+    str = '未读'
+  }
+  return str
+}
+module.exports = {
+  formatState: formatState,
+  formatRead: formatRead
+}

@@ -1,0 +1,11 @@
+var testCode = function(str){
+    if(!str){
+      wx.showToast({
+        content: '员工码不能为空',
+      })
+      return false
+    }
+}
+module.exports = {
+  testCode: testCode
+}

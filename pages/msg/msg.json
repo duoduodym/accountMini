@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "homeMsgItem": "/components/homeMsgItem/homeMsgItem"
+  },
+    "navigationBarBackgroundColor": "#06bebe",
+    "navigationBarTitleText": "消息首页",
+    "navigationBarTextStyle": "white"
+}

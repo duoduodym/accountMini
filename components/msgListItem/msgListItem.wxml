@@ -1,0 +1,20 @@
+<wxs src="./msgListItem.wxs" module="tools" />
+<view class="msgListItem">
+  <view class="inner-wrap">
+    <image src="{{readedSrc}}" class="read-img"></image>
+    <view class="info-wrap">
+      <text>{{item.from}}</text>
+      <view>
+        <text>{{item.name}}</text>
+        <text class="{{item.status == 0 ? 'noPass' : 'passed'}}">{{tools.formatState(item.status)}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="inner-wrap">
+    <view class="time-wrap">
+      <text class="{{item.isRead == 1 ? 'readed' : 'noRead'}}">{{tools.formatRead(item.isRead)}}</text>
+      <text>{{item.applyTime}}</text>
+    </view>
+    <image src="{{arrowSrc}}" class="arrow"></image>
+  </view>
+</view>

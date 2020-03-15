@@ -1,0 +1,51 @@
+.reason-wrap{
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index: 5;
+  padding: 20rpx;
+  overflow: hidden;
+  color: #666;
+  font-size: 32rpx;
+}
+.reaonItem{
+  display: flex;
+}
+.left{
+  width: 50rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+.ball{
+  width: 50rpx;
+  height:50rpx;
+  background: #06bebe;
+  border-radius: 50%;
+}
+.line{
+  background: #e5e5e5;
+  height:110rpx;
+  width: 6rpx;
+}
+.right{
+  margin-left: 30rpx;
+}
+.time-wrap{
+  display: flex;
+  align-items: center;
+}
+.time-img{
+  width: 40rpx;
+  height:40rpx;
+  margin-right: 10rpx;
+}
+.time-wrap{
+  margin-top: 10rpx;
+  display: flex;
+  align-items: center;
+  color: #999;
+}

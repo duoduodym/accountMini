@@ -1,0 +1,9 @@
+<view class="container bg-f5">
+  <fakeSearch external-class="fakeSearch" showBtn="{{false}}"/>
+  <tabs bind:changeTab="changeTab" tabList="{{tabList}}"/>
+  <view class="item-list">
+    <applyItem wx:for="{{applyList}}"
+    bind:clickItem="clickItem"
+     applyItem="{{item}}" wx:key="index" />
+  </view>
+</view>

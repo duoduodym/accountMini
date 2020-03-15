@@ -1,0 +1,3 @@
+<view class="container">
+    <msgListItem wx:for="{{msgList}}" item="{{item}}"/>
+</view>

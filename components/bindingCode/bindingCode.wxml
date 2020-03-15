@@ -1,0 +1,10 @@
+<view class="bindingCode">
+  <view class="content-wrap bg-f">
+    <view class="item">
+    <image class="m-img" src="{{mSrc}}"></image>
+      
+      <input type="text" bindinput="bindingCode" class="item-input" placeholder="请输入员工码"/> 
+    </view>
+    <button class='big-btn' bindtap="onBinding">绑定</button>
+  </view>
+</view>

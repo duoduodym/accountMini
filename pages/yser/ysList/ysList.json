@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+      "fakeSearch": "/components/fakeSearch/fakeSearch",
+      "tabs": "/components/tabs/tabs",
+      "ysListItem": "/components/ysListItem/ysListItem",
+      "reasonList": "/components/reasonList/reasonList"
+  },
+    "navigationBarBackgroundColor": "#06bebe",
+    "navigationBarTitleText": "营收单列表",
+    "navigationBarTextStyle": "white"
+}

@@ -1,0 +1,4 @@
+@import "../../../common/createList.wxss";
+.big-btn{
+  margin-top: 200rpx;
+}

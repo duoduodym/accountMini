@@ -1,0 +1,14 @@
+
+.container{
+  min-height: 100%;
+  background: #f5f5f5;
+}
+.item-list{
+  margin-top: 20rpx;
+  font-size: 30rpx;
+}
+.list-wrap{
+  position: absolute;
+  top:240rpx;
+  left:0;
+}

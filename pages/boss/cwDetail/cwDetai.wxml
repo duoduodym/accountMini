@@ -1,0 +1,32 @@
+<view class="container bg-f">
+  <view class="selTime-wrap">
+    <view class="total-wrap">
+      <view class="total-item yellow">
+        <text class="num">{{lrNum}}</text>
+        <text class="num name">总账面利润</text>
+        <image class="qb-img" src="{{qbSrc}}"></image>
+      </view>
+      <view class="total-item blue">
+        <text class="num">{{xjNum}}</text>
+        <text class="num name">总账面现金</text>
+        <image class="qb-img qb2" src="{{qb2Src}}"></image>
+      </view>
+    </view>
+    <view class="item-wrap" bindtap="goArea">
+      <view class="img-wrap">
+        <image class="item-img" src="{{areaSrc}}"></image>
+        <text>区间财务</text>
+      </view>
+
+      <image class="arrow" src="{{arrowSrc}}" b></image>
+    </view>
+    <view class="item-wrap" bindtap="goYear">
+      <view class="img-wrap">
+        <image class="item-img" src="{{yearSrc}}"></image>
+        <text>年度财务</text>
+      </view>
+      <image class="arrow" src="{{arrowSrc}}"></image>
+    </view>
+  </view>
+  
+</view>

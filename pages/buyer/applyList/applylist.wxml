@@ -1,0 +1,13 @@
+<view class="container bg-f5">
+  <fakeSearch external-class="fakeSearch" />
+  <tabs bind:changeTab="changeTab" />
+  <view class="applyList">
+    <applyItem wx:for="{{applyList}}" applyItem="{{item}}" wx:key="index" />
+  </view>
+ <button
+  class='big-btn new-btn'
+  bindtap="createApply"
+>
+新建报销
+</button>
+</view>

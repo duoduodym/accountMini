@@ -1,0 +1,33 @@
+
+.item-wrap{
+  margin-top: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.item-img{
+  width: 90rpx;
+  height:90rpx;
+  margin-bottom: 10rpx;
+}
+.item{
+  display: flex;
+   width:160rpx;
+  flex: 0 0 160rpx;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20rpx;
+
+}
+.empty-item{
+  width:160rpx;
+  flex: 0 0 160rpx;
+  height:0;
+}
+.item-wrap{
+  padding: 0 20rpx;
+}
+.item-name{
+  display: block;
+}

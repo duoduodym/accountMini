@@ -1,0 +1,93 @@
+<view class="container">
+  <view class="big-wrap bg-f">
+    <view>
+      <view class="item-wrap">
+        <text >开始时间：</text>
+        <view class="time-wrap">
+          <picker mode="date" value="{{startTime}}" bindchange="changeStartTime">
+            <view class="picker">
+              <view wx:if="{{startTime}}" class="time-wrap">
+                <text>{{startTime}}</text>
+              </view>
+              <text wx:else class="fc-9">请选择开始时间 ></text>
+            </view>
+          </picker>
+          <image class="delete-img" src="{{delSrc}}" bindtap="clearStartTime" wx:if="{{startTime}}"></image>
+        </view>
+
+      </view>
+      <view class="item-wrap">
+        <text >结束时间：</text>
+        <view class="time-wrap">
+          <picker mode="date" value="{{endTime}}" bindchange="changeEndTime">
+            <view class="picker">
+              <view wx:if="{{endTime}}" class="time-wrap">
+                <text>{{endTime}}</text>
+              </view>
+              <text wx:else class="fc-9">请选择开始时间 ></text>
+            </view>
+          </picker>
+          <image class="delete-img" src="{{delSrc}}" bindtap="clearEndTime" wx:if="{{endTime}}"></image>
+        </view>
+
+      </view>
+      <view class="item-wrap noBorder">
+        <text >快捷选择：</text>
+        <view class="time-wrap">
+          <picker value="{{monthStart}}" bindchange="changeMonth" range="{{monthList}}">
+            <view class="picker">
+              <view wx:if="{{selMonth}}" class="time-wrap">
+                <text>{{selMonth}}</text>
+              </view>
+              <text wx:else class="fc-9">请选择月份 ></text>
+            </view>
+          </picker>
+          <image class="delete-img" src="{{delSrc}}" bindtap="clearMonth" wx:if="{{selMonth}}"></image>
+        </view>
+      </view>
+      <view class="item-wrap createBtn-wrap">
+        <view class="create-btn">生成报表</view>
+      </view>
+    </view>
+
+    <view class="list-wrap">
+      <view class="item-wrap">
+        <text>报表区间</text>
+        <view>
+          <text>2020-03-03</text>
+          <text class="zhi">至</text>
+          <text>2020-03-03 </text>
+        </view>
+      </view>
+      <view class="total-wrap">
+        <text>账面总利润:</text>
+        <text class="fc-r fw-b ml-20">￥200000</text>
+      </view>
+      <view class="total-wrap">
+        <text>账面总现金:</text>
+        <text class="fc-r fw-b ml-20">￥200000</text>
+      </view>
+      <view class="item-wrap">
+        <view>
+          <text>应收款:</text>
+          <text class="fc-r fw-b ml-20">￥200000</text>
+        </view>
+        <view class="inner-wrap">
+          <text class="fc-9">查看明细</text>
+          <image class="arrow" src="{{arrowSrc}}"></image>
+        </view>
+      </view>
+        <view class="item-wrap">
+        <view>
+          <text>实收款:</text>
+          <text class="fc-r fw-b ml-20">￥200000</text>
+        </view>
+        <view class="inner-wrap">
+          <text class="fc-9">查看明细</text>
+          <image class="arrow" src="{{arrowSrc}}"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

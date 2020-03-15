@@ -1,0 +1,16 @@
+<view class="reason-wrap">
+  <view class="reaonItem" wx:for="{{reasonlist}}">
+    <view class="left">
+      <view class="ball"></view>
+      <view class="line" wx:if="{{index < reasonlist.length-1}}"></view>
+    </view>
+    <view class="right">
+      <text>{{item.label}}</text>
+      <view class="time-wrap">
+        <image class="time-img" src="{{timeSrc}}" class="time-img"></image>
+         <text>{{item.timer}}</text>
+      </view>
+
+    </view>
+  </view>
+</view>

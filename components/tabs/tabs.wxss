@@ -1,0 +1,30 @@
+.tabs{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  font-size: 30rpx;
+  height:100rpx;
+  color: #666;
+  position: fixed;
+  top:120rpx;
+  width: 100%;
+  left:0;
+  z-index: 4;
+  border-top:1rpx solid #e5e5e5;
+
+}
+.tab-item{
+  text-align: center;
+}
+.active{
+  color: #06bebe;
+}
+.line{
+ background: #06bebe;
+ height: 6rpx;
+ width:64rpx;
+ position: absolute;
+ bottom: 0;
+ transition: all .3s linear;
+}

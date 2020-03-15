@@ -1,0 +1,31 @@
+.msgItem{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #e5e5e5;
+  height:120rpx;
+  justify-items: center;
+}
+.item-img{
+  width: 70rpx;
+  height:70rpx;
+  margin-right: 20rpx;
+}
+.item-wrap{
+  display: flex;
+  align-items: center
+}
+.arrow{
+  width: 21rpx;
+  height:43rpx;
+  margin-left: 20rpx;
+}
+.round-text{
+  width: 46rpx;
+  height:46rpx;
+  background: red;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 46rpx;
+  font-size: 26rpx;
+  color: #fff;
+}

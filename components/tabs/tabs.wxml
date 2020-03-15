@@ -1,0 +1,10 @@
+<view class="tabs">
+    <view class="tab-item" wx:for="{{tabList}}"  
+    bindtap='changeTab' data-idx='{{index}}'
+    wx:key="index"
+    class="{{currentIndex == index ? 'active' : ''}}"
+    >
+      <text >{{item.label}}</text>
+    </view>
+    <view class='line' style="left:{{left}}px;width:{{width}}px"></view>
+</view>

@@ -1,0 +1,32 @@
+<view class="applyItem" bindtap="clickitem" data-item="{{applyItem}}">
+  <movable-area>
+    <movable-view damping="20" out-of-bounds="true" direction="horizontal" x="{{x}}" animation="false" bindchange="handleMovableChange" capture-bind:touchstart="handleTouchestart" 
+    friction="{{1}}"
+  capture-bind:touchend="handleTouchend">
+      <view class="main_item_content ">
+        <view class="tag">
+          <text>未提交</text>
+        </view>
+        <view class="main-wrap">
+          <view class="item-wrap ">
+            <text>名称：</text>
+            <text>{{applyItem.name}}</text>
+          </view>
+          <view class="item-wrap ">
+            <text>分类：</text>
+            <text>{{applyItem.category}}</text>
+          </view>
+          <view class="item-wrap price-wrap">
+            <view>
+              <text>价格：</text>
+              <text class="fc-r">￥{{applyItem.price}}</text>
+            </view>
+            <text class="apply-time fc-6">{{applyItem.applyTime}}</text>
+          </view>
+        </view>
+        <image class="arrow" src="{{arrowSrc}}"></image>
+      </view>
+    </movable-view>
+  </movable-area>
+  <view class="delete_btn " bindtap="handleDeleteProduct " bindtap="del">删除</view>
+</view>

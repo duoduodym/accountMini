@@ -1,0 +1,57 @@
+.bindingCode{
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  z-index: 2
+}
+.content-wrap{
+  width: 700rpx;
+  height:400rpx;
+  position: absolute;
+  top:50%;
+  left:50%;
+  z-index: 3;
+  background: #fff;
+  margin-left: -350rpx;
+  margin-top: -200rpx;
+  border-radius: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item{
+  display: flex;
+  align-items: center;
+  margin-top:100rpx; 
+  border:1px solid #ccc;
+  width: 560rpx;
+  height:80rpx;
+
+}
+.item-input{
+  margin-left: 20rpx;
+  padding-left: 10rpx;
+  color: #333;
+}
+.fc-6{
+  color:#666
+}
+.big-btn{
+  width: 560rpx;
+  height:80rpx;
+  background: #06bebe;
+  border-radius: 40srpx;
+  box-shadow: 0rpx 2rpx 10rpx 4rpx rgba(0,0,0,0.2);
+  color: #fff;
+  font-size: 32rpx;
+  display:block;
+  margin-top:20px;
+}
+.m-img{
+  width:60rpx;
+  height:60rpx;
+  margin-left: 10rpx;
+}

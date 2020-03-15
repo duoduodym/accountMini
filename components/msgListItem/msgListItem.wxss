@@ -1,0 +1,31 @@
+.msgListItem{
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-size: 30rpx;
+  align-items: center;
+  height:120rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.read-img{
+  width: 80rpx;
+  height:80rpx;
+  margin-right: 20rpx;
+}
+.inner-wrap{
+  display: flex;
+  align-items: center;
+}
+
+.time-wrap text{
+  display: block;
+  text-align: right;
+}
+.arrow{
+  width: 21rpx;
+  height:43rpx;
+  margin-left: 30rpx;
+}
+.noRead{
+  color:red
+}

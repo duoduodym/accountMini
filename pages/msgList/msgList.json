@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "msgListItem": "/components/msgListItem/msgListItem"
+  },
+    "navigationBarBackgroundColor": "#06bebe",
+    "navigationBarTitleText": "消息列表",
+    "navigationBarTextStyle": "white"
+}

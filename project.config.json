@@ -1,0 +1,156 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"coverView": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.4",
+	"appid": "wx7a8c1e41a76614d8",
+	"projectname": "account",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/me/me",
+					"pathName": "pages/me/me",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/me/me",
+					"pathName": "pages/me/me",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "home",
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/buyer/applyList",
+					"pathName": "pages/buyer/applyList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "buyerApplyList",
+					"pathName": "pages/buyer/applyList/applylist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "createApply",
+					"pathName": "pages/buyer/createApply/createApply",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "pages/msg/msg",
+					"pathName": "pages/msg/msg",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/msgList/msgList",
+					"pathName": "pages/msgList/msgList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/yser/ysList/ysList",
+					"pathName": "pages/yser/ysList/ysList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/boss/applyList/applyList",
+					"pathName": "pages/boss/applyList/applyList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/boss/applyDetail/applyDetail",
+					"pathName": "pages/boss/applyDetail/applyDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/boss/areaTotal/areaTotal",
+					"pathName": "pages/boss/areaTotal/areaTotal",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/boss/cwDetail/cwDetai",
+					"pathName": "pages/boss/cwDetail/cwDetai",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/boss/areaTotal/areaTotal",
+					"pathName": "pages/boss/areaTotal/areaTotal",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/boss/yearCw/yearCw",
+					"pathName": "pages/boss/yearCw/yearCw",
+					"scene": null
+				}
+			]
+		}
+	}
+}

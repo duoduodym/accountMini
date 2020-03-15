@@ -1,0 +1,11 @@
+<view class="external-class fakeSearch">
+  <view class="search-wrap big" bindtap="onSearch" wx:if="{{!showBtn}}">
+    <image src="{{glassSrc}}" class="glass-img"></image>
+    <text class="search-text">搜索报销单</text>
+  </view>
+   <view class="search-wrap" bindtap="onSearch" wx:else>
+    <image src="{{glassSrc}}" class="glass-img"></image>
+    <text class="search-text">搜索报销单</text>
+  </view>
+  <text class="new-btn" bindtap="clickBtn" wx:if="{{showBtn}}">{{btnText}}</text>
+</view>

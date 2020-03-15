@@ -1,0 +1,34 @@
+.fakeSearch{
+  margin-bottom: 20rpx !important;
+}
+.applyList{
+  margin-top: 20rpx;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.main_item {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  overflow: hidden;
+}
+.main_item_content {
+  box-sizing: border-box;
+  height: 201rpx;
+  border-radius: 10rpx;
+  line-height: 201rpx;
+  color: #8e8e8e;
+  padding-left: 10px;
+  background: #eee;
+}
+.new-btn{
+  position: absolute;
+  bottom:100rpx;
+  left:50%;
+  margin-left: -300rpx;
+  font-size: 32rpx;
+}

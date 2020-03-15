@@ -1,0 +1,11 @@
+
+<view class="container">
+   <fakeSearch external-class="fakeSearch" 
+   bind:onSearch="onSearch"
+   btnText="发起营收" bind:clickBtn="onCreate"/>
+    <tabs bind:changeTab="changeTab" tabList="{{tabList}}"/>
+    <view class="list-wrap">
+         <ysListItem wx:for="{{ysList}}" ysListItem="{{item}}" wx:key="index" />
+    </view>
+    <!-- <reasonList/> -->
+</view>
