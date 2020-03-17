@@ -1,10 +1,10 @@
 <view class="container ">
   <view class="item-wrap fc-30">
-    <view class="item" bindtap="goApplyList" wx:if="{{showApplyBuyer}}">
+    <view class="item" bindtap="goApplyList" wx:if="{{showApplyBuyer}}" data-type="{{'buyer'}}">
       <image class="item-img" src="{{applySrc}}"></image>
       <text class="item-name fc-6">报销(采购)</text>
     </view>
-    <view class="item" bindtap="goApplyList" wx:if="{{showApplyCn}}">
+    <view class="item" bindtap="goApplyList" data-type="{{'cn'}}" wx:if="{{showApplyCn}}">
       <image class="item-img" src="{{applySrc}}"></image>
       <text class="item-name fc-6">报销(出纳)</text>
     </view>

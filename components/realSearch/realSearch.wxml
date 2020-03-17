@@ -1,0 +1,8 @@
+<view class="real-search">
+  <view class="search-wrap big" bindtap="onSearch">
+    <image src="{{glassSrc}}" class="glass-img"></image>
+    <input bindinput="bindKeyInput" placeholder="输入关键字搜索" placeholder-class="fc-9" class="search-input" value="{{searchKey}}" />
+    <image class="cha-img" src="{{chaSrc}}" wx:if="{{searchKey}}" bindtap="clearKey"></image>
+  </view>
+  <text class="cancel-btn" bindtap="closeResult">取消</text>
+</view>

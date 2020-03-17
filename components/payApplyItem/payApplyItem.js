@@ -1,22 +1,22 @@
 
 Component({
   properties: {
-    applyItem:Object
+    payApplyItem: Object
   },
   data: {
-    arrowSrc:'/images/arrow.png',
+    arrowSrc: '/images/arrow.png',
     x: 0,
     currentX: 0
   },
   methods: {
-    del(){
+    del() {
       this.setData({
-        x:0
+        x: 0
       })
     },
-    clickitem(e){
+    clickitem(e) {
       const item = e.currentTarget.dataset.item
-      this.triggerEvent('clickItem',item)
+      this.triggerEvent('clickItem', item)
     }
   }
 })

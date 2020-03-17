@@ -5,9 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    isSearching:false,
-    applyList:[],
-    applyList2:[],
+    isSearching: false,
+    payList: [],
+    payList2: [],
     x: 0,
     currentX: 0,
     tabList: [{
@@ -16,17 +16,11 @@ Page({
     },
     {
       value: 2,
-      label: '未提交'
+      label: '待打款'
     },
     {
       value: 3,
-      label: '已提交'
-    }, {
-      value: 4,
-      label: '未通过'
-    }, {
-      value: 5,
-      label: '已成功'
+      label: '已打款'
     }]
   },
 
@@ -35,45 +29,40 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      applyList:datas.applyList,
-      applyList2: datas.applyList
+      payList: datas.payList,
+      payList2: datas.payList
     })
-    console.log(this.data.applyList)
+    console.log(this.data.payList)
   },
-  changeTab(val){
+  changeTab(val) {
     console.log(val)
   },
-  createApply(){
-    wx.navigateTo({
-      url: '/pages/buyer/applyDetail/applyDetail',
-    })
-  },
-  closeResult(){
+  closeResult() {
     this.setData({
-      isSearching:false
+      isSearching: false
     })
   },
-  onSearch(){
+  onSearch() {
     this.setData({
-      isSearching:true
+      isSearching: true
     })
   },
-  clearSearch(){
+  clearSearch() {
     this.setData({
-      applyList2:[]
+      applyList2: []
     })
   },
-  closeResult(){
+  closeResult() {
     this.setData({
       isSearching: false,
       applyList2: []
     })
   },
-  clickItem(e){
+  clickItem(e) {
     wx.navigateTo({
       url: `/pages/buyer/applyDetail/applyDetail?state=${e.detail.state}`
     })
   }
 
-  
+
 })

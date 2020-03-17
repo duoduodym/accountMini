@@ -31,5 +31,5 @@ wx:else
 >
 退出登录
 </button>
-<bindingCode bind:bindingSuccess="bindingSuccess" wx:if="{{showCodeWrap}}"/>
+
 </view>

@@ -1,4 +1,4 @@
-<wxs src="./applyItem.wxs" module="tools" />
+<wxs src="./payApplyItem.wxs" module="tools" />
 <view class="list-item" bindtap="clickitem" data-item="{{applyItem}}">
   <movable-area>
     <movable-view damping="20" out-of-bounds="true" direction="horizontal" x="{{x}}" animation="false" 
@@ -6,24 +6,23 @@
   capture-bind:touchend="handleTouchend">
       <view class="main_item_content ">
         <view class="tag">
-        
-          <text>{{tools.formatState(applyItem.state)}}</text>
+          <text>{{tools.formatState(payApplyItem.state)}}</text>
         </view>
         <view class="main-wrap">
           <view class="item-wrap ">
             <text>名称：</text>
-            <text>{{applyItem.name}}</text>
+            <text>{{payApplyItem.name}}</text>
           </view>
           <view class="item-wrap ">
             <text>分类：</text>
-            <text>{{applyItem.category}}</text>
+            <text>{{payApplyItem.category}}</text>
           </view>
           <view class="item-wrap price-wrap">
             <view>
               <text>价格：</text>
-              <text class="fc-r">￥{{applyItem.price}}</text>
+              <text class="fc-r">￥{{payApplyItem.price}}</text>
             </view>
-            <text class="apply-time fc-6">{{applyItem.applyTime}}</text>
+            <text class="apply-time fc-6">{{payApplyItem.applyTime}}</text>
           </view>
         </view>
         <image class="arrow" src="{{arrowSrc}}"></image>

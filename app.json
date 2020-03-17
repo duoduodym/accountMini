@@ -5,7 +5,7 @@
     "pages/me/me",
     "pages/buyer/applyList/applylist",
     "components/tabs/tabs",
-    "pages/buyer/createApply/createApply",
+    "pages/buyer/applyDetail/applyDetail",
     "pages/msgList/msgList",
     "pages/yser/ysList/ysList",
     "pages/yser/createYs/createYs",
@@ -14,7 +14,8 @@
     "pages/boss/areaTotal/areaTotal",
     "pages/boss/cwDetail/cwDetai",
     "pages/boss/yearCw/yearCw",
-    "pages/boss/yearCwDetail/yearCwDetail"
+    "pages/boss/yearCwDetail/yearCwDetail",
+    "pages/cn/applyList/applyList"
   ],
   "window": {
     "backgroundTextStyle": "light",

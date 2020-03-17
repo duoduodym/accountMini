@@ -1,0 +1,63 @@
+<view class="container bg-f5">
+  <view class="bg-f content-wrap">
+    <view class="title item-wrap">
+      <image class="dd-img" class="dd-img" src="{{ddSrc}}"></image>
+      <text>订单信息</text>
+    </view>
+    <view class="item-wrap">
+      <text>名称:{{isDisabel}}</text>
+      <input bindinput="bindKeyInput" placeholder="请输入订单名称" disabled="{{isDisabled}}" placeholder-class="fc-9" />
+    </view>
+    <view class="item-wrap">
+      <text>分类:</text>
+      <picker bindchange="changeCategory" value="{{index}}" disabled="{{isDisabled}}" range-key="label" range="{{categoryList}}">
+        <view class="picker">
+          <text wx:if="{{infoObj.categoryName}}">{{infoObj.categoryName}}</text>
+          <text wx:else class="fc-9">请选择分类</text>
+        </view>
+      </picker>
+    </view>
+    <view class="item-wrap">
+      <text>申报金额:</text>
+      <input bindinput="bindKeyInput" placeholder="请输入申报金额" placeholder-class="fc-9" disabled="{{isDisabled}}" />
+    </view>
+    <view class="item-wrap">
+      <text>申报日期:</text>
+      <picker mode="date" value="{{infoObj.applyTime}}" bindchange="bindDateChange" disabled="{{isDisabled}}">
+        <view class="picker">
+          <text wx:if="{{infoObj.applyTime}}">{{infoObj.applyTime}}</text>
+          <text wx:else class="fc-9">请选择申报日期</text>
+        </view>
+      </picker>
+    </view>
+    <view class="item-wrap">
+      <text>结束日期:</text>
+      <text>2020-03-04</text>
+    </view>
+    <view class="img-wrap fc-6">
+      <text class="fc-30">凭据：</text>
+      <view class="img-list">
+        <view class="img-box" wx:for="{{infoObj.imgList}}" wx:key="index">
+          <image class="item-img" src="{{item}}" bindtap="onPrevies" data-idx="{{index}}"></image>
+          <image class="del-img" src="{{delSrc}}" bindtap="ondel" data-idx="{{index}}"></image>
+        </view>
+        <image class="add-imga" src="{{addSrc}}" bindtap="addImg" wx:if="{{!isDisabled}}"></image>
+        <div class="itemempty"></div>
+        <div class="itemempty"></div>
+        <div class="itemempty"></div>
+      </view>
+    </view>
+    <view class="item-wrap" wx:if="{{state!=1 && state!=2}}">
+      <text>状态:</text>
+      <text>已成功</text>
+    </view>
+    <view class="btn-wrap" wx:if="{{state=='1'}}">
+      <view class='btn save-btn'>暂存</view>
+      <view class='btn confirm-btn'>提交</view>
+    </view>
+    <button  class='big-btn' wx:if="{{state=='3'}}">
+      提交
+    </button>
+
+  </view>
+</view>

@@ -1,0 +1,16 @@
+var formatState = function (str) {
+  if (str) {
+    if(str == '1'){
+      return '未提交'
+    } else if (str == '2'){
+      return '已提交'
+    } else if (str == '3'){
+      return '未通过'
+    } else if (str == '4'){
+      return '已成功'
+    }
+  }
+}
+module.exports = {
+  formatState: formatState
+}

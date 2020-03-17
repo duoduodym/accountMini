@@ -67,9 +67,16 @@ Page({
       })
     }
   },
-  goApplyList(){
+  goApplyList(e){
+    const type = e.currentTarget.dataset.type
+    let url = ''
+    if (type == 'type'){
+      url = '/pages/buyer/applyList/applylist'
+    } else if (type == 'cn'){
+      url = '/pages/cn/applyList/applyList'
+    }
     wx.navigateTo({
-      url: '/pages/buyer/applyList/applylist'
+      url
     })
   },
   goysList(){

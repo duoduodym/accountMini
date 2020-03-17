@@ -2,7 +2,7 @@
   "usingComponents": {
     "fakeSearch": "/components/fakeSearch/fakeSearch",
     "tabs": "/components/tabs/tabs",
-    "applyItem": "/components/applyItem/applyItem",
+    "payApplyItem": "/components/payApplyItem/payApplyItem",
     "realSearch": "/components/realSearch/realSearch"
   },
   "navigationBarBackgroundColor": "#06bebe",

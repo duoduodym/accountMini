@@ -1,0 +1,50 @@
+.real-search{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height:100rpx;
+  border-bottom:1px solid #e5e5e5;
+  position: fixed;
+  top:0;
+  left:0;
+  background: #fff;
+  justify-content: center;
+  z-index: 10;
+}
+.search-wrap{
+  width: 530rpx;
+  height:60rpx;
+  border:2rpx solid #e5e5e5;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.glass-img{
+  width: 40rpx;
+  height:40rpx;
+}
+.search-text{
+  color: #999;
+  margin-left:20rpx;
+  font-size: 30rpx;
+}
+.cancel-btn{
+  color: #666;
+  font-size: 34rpx;
+  margin-left: 20rpx;
+}
+.head-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-input{
+  padding-left: 10rpx;
+  width: 500rpx;
+}
+.cha-img{
+  display: block;
+  width: 30rpx;
+  height:30rpx;
+}

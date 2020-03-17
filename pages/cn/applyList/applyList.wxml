@@ -1,3 +1,4 @@
+
 <view class="container">
   <fakeSearch external-class="fakeSearch" bind:onSearch="onSearch" wx:if="{{!isSearching}}"/>
   <realSearch bind:closeResult="closeResult"
@@ -5,18 +6,11 @@
    wx:if="{{isSearching}}"/>
   <tabs bind:changeTab="changeTab" tabList="{{tabList}}" wx:if="{{!isSearching}}"/>
   <view class="applyList" wx:if="{{!isSearching}}">
-    <applyItem wx:for="{{applyList}}" applyItem="{{item}}"
+    <payApplyItem wx:for="{{payList}}" payApplyItem="{{item}}"
     bind:clickItem="clickItem"
      wx:key="index" />
   </view>
    <view class="search-list" wx:if="{{isSearching}}">
-    <applyItem wx:for="{{applyList2}}" applyItem="{{item}}" wx:key="index" />
+    <applyItem wx:for="{{payList}}" payApplyItem="{{item}}" wx:key="index" />
   </view>
- <button
-  class='big-btn new-btn'
-  bindtap="createApply"
-  wx:if="{{!isSearching}}"
->
-新建报销
-</button>
 </view>

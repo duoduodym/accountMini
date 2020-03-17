@@ -148,6 +148,41 @@
 					"id": -1,
 					"name": "pages/boss/yearCw/yearCw",
 					"pathName": "pages/boss/yearCw/yearCw",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/buyer/applyList/applylist",
+					"pathName": "pages/buyer/applyList/applylist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/searchPage/searchPage",
+					"pathName": "pages/searchPage/searchPage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/searchPage/searchPage",
+					"pathName": "pages/searchPage/searchPage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/buyer/search/search",
+					"pathName": "pages/buyer/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cn/applyList/applyList",
+					"pathName": "pages/cn/applyList/applyList",
 					"scene": null
 				}
 			]
