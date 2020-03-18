@@ -6,43 +6,69 @@
     </view>
     <view class="item-wrap">
       <text>名称:</text>
-      <input bindinput="bindKeyInput" placeholder="请输入订单名称" placeholder-class="fc-9" />
+      <text>这是名称</text>
     </view>
     <view class="item-wrap">
       <text>分类:</text>
-      <input bindinput="bindKeyInput" placeholder="请输入分类" placeholder-class="fc-9" />
+      <text>这是分类</text>
     </view>
     <view class="item-wrap">
       <text>申报金额:</text>
-      <input bindinput="bindKeyInput" placeholder="请输入申报金额" placeholder-class="fc-9" />
+      <text>这是申报金额</text>
     </view>
     <view class="item-wrap">
       <text>申报日期:</text>
-      <picker mode="date" value="{{infoObj.applyTime}}" bindchange="bindDateChange">
-        <view class="picker">
-          <text wx:if="{{infoObj.applyTime}}">{{infoObj.applyTime}}</text>
-          <text wx:else class="fc-9">请选择申报金额</text>
-        </view>
-      </picker>
+      <text>这是申报日期</text>
+    </view>
+    <view class="item-wrap">
+      <text>申请人:</text>
+      <text>这是申请人</text>
     </view>
     <view class="img-wrap fc-6">
       <text class="fc-30">凭据：</text>
       <view class="img-list">
         <view class="img-box" wx:for="{{infoObj.imgList}}" wx:key="index">
           <image class="item-img" src="{{item}}" bindtap="onPrevies" data-idx="{{index}}"></image>
-          <image class="del-img" src="{{delSrc}}" bindtap="ondel" data-idx="{{index}}"></image>
         </view>
-        <image class="add-imga" src="{{addSrc}}" bindtap="addImg"></image>
         <div class="itemempty"></div>
         <div class="itemempty"></div>
         <div class="itemempty"></div>
       </view>
     </view>
-     <button
-  class='big-btn'
->
-退出登录
-</button>
+    <view class="item-wrap" wx:if="{{state==1}}">
+      <text>是否通过:</text>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <radio class="radio" value="1">
+          <text>通过</text>
+        </radio>
+        <radio class="radio" value="0">
+          <text>拒绝</text>
+        </radio>
+      </radio-group>
+    </view>
+    <view class="item-wrap" wx:if="{{state==1}}">
+      <text>不通过原有:</text>
+      <input bindinput="bindKeyInput" placeholder="请输入拒绝原因" placeholder-class="fc-9" class="jjReason" />
+    </view>
+    <view class="item-wrap">
+      <text>审批意见:</text>
+      <view class="inner-wrap">
+        <text>通过</text>
+        <image class="arrow" src="{{arrowSrc}}"></image>
+      </view>
+
+    </view>
+    <view class="item-wrap">
+      <text>审批时间:</text>
+      <text>2020-03-03</text>
+    </view>
+    <view class="item-wrap">
+      <text>审批人:</text>
+      <text>王鹤飞</text>
+    </view>
+    <button class='big-btn' wx:if="{{state==1}}">
+      提交
+    </button>
   </view>
- 
+
 </view>

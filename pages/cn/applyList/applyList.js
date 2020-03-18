@@ -60,7 +60,7 @@ Page({
   },
   clickItem(e) {
     wx.navigateTo({
-      url: `/pages/buyer/applyDetail/applyDetail?state=${e.detail.state}`
+      url: `/pages/cn/applyDetail/applyDetail?state=${e.detail.state}`
     })
   }
 

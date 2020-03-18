@@ -2,3 +2,14 @@
 .big-btn{
   margin-top: 200rpx;
 }
+radio{
+  margin-left:20rpx;
+  transform:scale(0.8);
+  font-size: 36rpx;
+}
+.jjReason{
+  width: 550rpx;
+}
+.arrow{
+  margin-left: 20rpx;
+}

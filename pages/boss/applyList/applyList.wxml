@@ -1,9 +1,16 @@
-<view class="container bg-f5">
-  <fakeSearch external-class="fakeSearch" showBtn="{{false}}"/>
-  <tabs bind:changeTab="changeTab" tabList="{{tabList}}"/>
-  <view class="item-list">
-    <applyItem wx:for="{{applyList}}"
+
+<view class="container">
+  <fakeSearch external-class="fakeSearch" bind:onSearch="onSearch" wx:if="{{!isSearching}}"/>
+  <realSearch bind:closeResult="closeResult"
+  bind:clearSearch="clearSearch"
+   wx:if="{{isSearching}}"/>
+  <tabs bind:changeTab="changeTab" tabList="{{tabList}}" wx:if="{{!isSearching}}"/>
+  <view class="applyList" wx:if="{{!isSearching}}">
+    <applyItemLb wx:for="{{applyList}}" applyItemLb="{{item}}"
     bind:clickItem="clickItem"
-     applyItem="{{item}}" wx:key="index" />
+     wx:key="index" />
+  </view>
+   <view class="search-list" wx:if="{{isSearching}}">
+    <applyItemLb wx:for="{{applyList}}" payApplyItem="{{item}}" wx:key="index" />
   </view>
 </view>

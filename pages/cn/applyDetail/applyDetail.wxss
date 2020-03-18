@@ -1,0 +1,19 @@
+@import "../../../common/createList.wxss";
+.big-btn{
+ margin-top: 50rpx;
+ margin-bottom: 50rpx;
+}
+.audit-img{
+  width: 40rpx;
+  height:40rpx;
+  margin-right: 14rpx;
+}
+.op-img{
+  width: 50rpx;
+  height:50rpx;
+  margin-right: 10rpx;
+}
+.content-wrap{
+  height: auto;
+  min-height: auto;
+}

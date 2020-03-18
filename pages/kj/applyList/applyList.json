@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "fakeSearch": "/components/fakeSearch/fakeSearch",
+    "realSearch": "/components/realSearch/realSearch",
+    "applyItemKj": "/components/applyItemKj/applyItemKj"
+  },
+  "navigationBarBackgroundColor": "#06bebe",
+  "navigationBarTitleText": "报销单列表",
+  "navigationBarTextStyle": "white"
+}

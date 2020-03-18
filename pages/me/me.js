@@ -10,10 +10,10 @@ Page({
     showCodeWrap: false,
     isLogin: false,
     userInfo: {
-      nickName:'',
+      nickName: '',
     },
-    boySrc:'/images/boy.png',
-    sexSrc:''
+    boySrc: '/images/boy.png',
+    sexSrc: ''
   },
 
   /**
@@ -41,7 +41,7 @@ Page({
       isLogin: true,
       avatarSrc: this.data.userInfo.avatarUrl,
       sexSrc: this.data.userInfo.gender == 1 ? this.data.boySrc : this.data.girlSrc,
-      showCodeWrap:false
+      showCodeWrap: false
     })
     console.log(this.data.sexSrc)
   }

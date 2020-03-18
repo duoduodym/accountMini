@@ -1,10 +1,10 @@
-
-<view class="list-item">
+<wxs src="./ysListItem.wxs" module="tools" />
+<view class="list-item" bindtap="clickitem" data-item="{{ysListItem}}">
   <movable-area>
     <movable-view damping="20" out-of-bounds="true" direction="horizontal" x="{{x}}" animation="false" friction="{{1}}">
       <view class="main_item_content " bindtap="cancelDel">
         <view class="tag">
-          <text>未提交</text>
+          <text>{{tools.formatState(ysListItem.state)}}</text>
         </view>
         <view class="main-wrap">
           <view class="item-wrap ">

@@ -1,5 +1,5 @@
 <wxs src="./payApplyItem.wxs" module="tools" />
-<view class="list-item" bindtap="clickitem" data-item="{{applyItem}}">
+<view class="list-item" bindtap="clickitem" data-item="{{payApplyItem}}">
   <movable-area>
     <movable-view damping="20" out-of-bounds="true" direction="horizontal" x="{{x}}" animation="false" 
     friction="{{1}}"

@@ -1,11 +1,24 @@
 
 <view class="container">
    <fakeSearch external-class="fakeSearch" 
-   bind:onSearch="onSearch"
-   btnText="发起营收" bind:clickBtn="onCreate"/>
-    <tabs bind:changeTab="changeTab" tabList="{{tabList}}"/>
-    <view class="list-wrap">
-         <ysListItem wx:for="{{ysList}}" ysListItem="{{item}}" wx:key="index" />
+   bind:onSearch="onSearch"  wx:if="{{!isSearching}}"/>
+   <realSearch bind:closeResult="closeResult"
+  bind:clearSearch="clearSearch"
+   wx:if="{{isSearching}}"/>
+    <tabs bind:changeTab="changeTab" tabList="{{tabList}}"  wx:if="{{!isSearching}}"/>
+    <view class="applyList"  wx:if="{{!isSearching}}">
+         <ysListItem wx:for="{{ysList}}"
+         bind:clickitem="clickitem"
+          ysListItem="{{item}}" wx:key="index" />
     </view>
-    <!-- <reasonList/> -->
+    <view class="search-list" wx:if="{{isSearching}}"  wx:if="{{isSearching}}">
+    <ysListItem wx:for="{{ysList}}" ysListItem="{{item}}" wx:key="index" />
+  </view>
+ <button
+  class='big-btn new-btn'
+  bindtap="createApply"
+  wx:if="{{!isSearching}}"
+>
+发起营收
+</button>
 </view>

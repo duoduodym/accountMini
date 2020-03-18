@@ -8,8 +8,6 @@ Page({
     isSearching:false,
     applyList:[],
     applyList2:[],
-    x: 0,
-    currentX: 0,
     tabList: [{
       value: 1,
       label: '全部'

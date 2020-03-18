@@ -51,42 +51,49 @@ const applyList = [
 ]
 var ysList = [
   {
+    state:'1',
     name:'漂流洗发水',
     ysPrice:'2000',
     ssPrice:'3000',
     startTime:'2020-03-03'
   },
   {
+    state: '2',
     name: '海飞丝',
     ysPrice: '1000',
     ssPrice: '4000',
     startTime: '2020-03-03'
   },
   {
+    state: '3',
     name: '海飞丝',
     ysPrice: '1000',
     ssPrice: '4000',
     startTime: '2020-03-03'
   },
   {
+    state: '4',
     name: '海飞丝',
     ysPrice: '1000',
     ssPrice: '4000',
     startTime: '2020-03-03'
   },
   {
+    state: '1',
     name: '海飞丝',
     ysPrice: '1000',
     ssPrice: '4000',
     startTime: '2020-03-03'
   },
   {
+    state: '2',
     name: '海飞丝',
     ysPrice: '1000',
     ssPrice: '4000',
     startTime: '2020-03-03'
   },
   {
+    state: '3',
     name: '海飞丝',
     ysPrice: '1000',
     ssPrice: '4000',

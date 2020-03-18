@@ -2,7 +2,8 @@
   "usingComponents": {
     "fakeSearch": "/components/fakeSearch/fakeSearch",
     "tabs": "/components/tabs/tabs",
-    "applyItem": "/components/applyItem/applyItem"
+    "applyItemLb": "/components/applyItemLb/applyItemLb",
+    "realSearch": "/components/realSearch/realSearch"
   },
   "navigationBarBackgroundColor": "#06bebe",
   "navigationBarTitleText": "报销单列表",

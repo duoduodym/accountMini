@@ -183,6 +183,34 @@
 					"id": -1,
 					"name": "pages/cn/applyList/applyList",
 					"pathName": "pages/cn/applyList/applyList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cn/applyDetail/applyDetail",
+					"pathName": "pages/cn/applyDetail/applyDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/kj/applyList/applyList",
+					"pathName": "pages/kj/applyList/applyList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/kj/applyDetail/applyDetail",
+					"pathName": "pages/kj/applyDetail/applyDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/yser/ysDetail/ysDetail",
+					"pathName": "pages/yser/ysDetail/ysDetail",
 					"scene": null
 				}
 			]

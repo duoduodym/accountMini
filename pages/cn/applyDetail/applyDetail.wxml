@@ -1,0 +1,81 @@
+<view class="container bg-f5">
+  <view class="bg-f content-wrap">
+    <view class="title item-wrap">
+      <image class="dd-img" class="dd-img" src="{{ddSrc}}"></image>
+      <text>订单信息</text>
+    </view>
+    <view class="item-wrap">
+      <text>名称:</text>
+      <text>我是名称</text>
+    </view>
+    <view class="item-wrap">
+      <text>分类:</text>
+      <text>我是分类</text>
+    </view>
+    <view class="item-wrap">
+      <text>申报金额:</text>
+      <text>我是金额</text>
+    </view>
+    <view class="item-wrap">
+      <text>申销日期:</text>
+      <text>我是申报日期</text>
+    </view>
+    <view class="img-wrap fc-6">
+      <text class="fc-30">凭据：</text>
+      <view class="img-list">
+        <view class="img-box" wx:for="{{infoObj.imgList}}" wx:key="index">
+          <image class="item-img" src="{{item}}" bindtap="onPrevies" data-idx="{{index}}"></image>
+        </view>
+        <div class="itemempty"></div>
+        <div class="itemempty"></div>
+        <div class="itemempty"></div>
+      </view>
+    </view>
+    <view class="title item-wrap">
+      <image class="audit-img" src="{{auditSrc}}"></image>
+      <text>审批信息</text>
+    </view>
+    <view class="item-wrap">
+      <text>审批意见:</text>
+      <text>通过</text>
+    </view>
+    <view class="item-wrap">
+      <text>审批时间:</text>
+      <text>2020-03-03</text>
+    </view>
+    <view class="item-wrap">
+      <text>审批人:</text>
+      <text>黄总</text>
+    </view>
+    <view class="title item-wrap">
+      <image class="op-img" src="{{opertionSrc}}"></image>
+      <text>操作</text>
+    </view>
+     <view class="img-wrap fc-6">
+      <text class="fc-30">凭据：</text>
+      <view class="img-list">
+        <view class="img-box" wx:for="{{infoObj.imgList}}" wx:key="index">
+          <image class="item-img" src="{{item}}" bindtap="onPrevies" data-idx="{{index}}"></image>
+          <image class="del-img" src="{{delSrc}}" bindtap="ondel" data-idx="{{index}}"></image>
+        </view>
+        <image class="add-imga" src="{{addSrc}}" bindtap="addImg" wx:if="{{state!=2}}"></image>
+        <div class="itemempty"></div>
+        <div class="itemempty"></div>
+        <div class="itemempty"></div>
+      </view>
+    </view>
+    <view class="item-wrap">
+      <text>打款日期:</text>
+      <picker mode="date" value="{{infoObj.applyTime}}" bindchange="bindDateChange" disabled="{{isDisabled}}">
+        <view class="picker">
+          <text wx:if="{{infoObj.applyTime}}">{{infoObj.applyTime}}</text>
+          <text wx:else class="fc-9">请选择申报日期</text>
+        </view>
+      </picker>
+    </view>
+    <button class='big-btn' wx:if="{{state != 2}}">
+      提交
+    </button>
+
+  </view>
+</view>

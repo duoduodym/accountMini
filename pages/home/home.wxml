@@ -9,15 +9,15 @@
       <text class="item-name fc-6">报销(出纳)</text>
     </view>
 
-    <view class="item" bindtap="goApplyList" wx:if="{{showApplyLb}}">
+    <view class="item" bindtap="goApplyList" wx:if="{{showApplyLb}}" data-type="{{'lb'}}">
       <image class="item-img" src="{{applySrc}}"></image>
       <text class="item-name fc-6">报销(老板)</text>
     </view>
-    <view class="item" bindtap="goApplyList" wx:if="{{showApplyKj}}">
+    <view class="item" bindtap="goApplyList" wx:if="{{showApplyKj}}" data-type="{{'kj'}}">
       <image class="item-img" src="{{applySrc}}"></image>
       <text class="item-name fc-6">报销(会计)</text>
     </view>
-    <view class="item" bindtap="goApplyList" wx:if="{{showYsYs}}">
+    <view class="item" bindtap="goYsList" wx:if="{{showYsYs}}" data-type="{{'ys'}}">
       <image class="item-img" src="{{walletSrc}}"></image>
       <text class="item-name fc-6">营收(营收)</text>
     </view>

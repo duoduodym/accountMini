@@ -1,0 +1,16 @@
+@import "../../../common/createList.wxss";
+
+.audit-img{
+  width: 40rpx;
+  height:40rpx;
+  margin-right: 14rpx;
+}
+.op-img{
+  width: 50rpx;
+  height:50rpx;
+  margin-right: 10rpx;
+}
+.content-wrap{
+  height: auto;
+  min-height: auto;
+}

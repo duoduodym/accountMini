@@ -1,11 +1,15 @@
-
+.container{
+  padding: 20rpx;
+}
 .content-wrap{
   border-radius: 10rpx;
   padding: 20rpx;
-  height: 100%;
   box-sizing: border-box;
   width: 100%;
   background: #fff;
+  padding-bottom:50rpx;
+  min-height: calc( 100% - 40rpx);
+  height: auto;
 }
 .dd-img{
   width: 40rpx;
@@ -32,6 +36,8 @@
   display: flex;
   justify-content: space-between;
   margin-top: 30rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid #e5e5e5;
 }
 .img-list{
   width: 540rpx;

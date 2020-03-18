@@ -1,0 +1,15 @@
+
+<view class="container">
+  <fakeSearch external-class="fakeSearch" bind:onSearch="onSearch" wx:if="{{!isSearching}}"/>
+  <realSearch bind:closeResult="closeResult"
+  bind:clearSearch="clearSearch"
+   wx:if="{{isSearching}}"/>
+  <view class="applyList" wx:if="{{!isSearching}}">
+    <applyItemKj wx:for="{{applyList}}" applyItemKj="{{item}}"
+    bind:clickItem="clickItem"
+     wx:key="index" />
+  </view>
+   <view class="search-list" wx:if="{{isSearching}}">
+    <applyItemKj wx:for="{{applyList}}" applyItemKj="{{item}}" wx:key="index" />
+  </view>
+</view>

@@ -1,1 +1,6 @@
-@import "../../../common/item-list.wxss"
+.applyList{
+  margin-top: 240rpx;
+}
+.search-list{
+  margin-top: 120rpx;
+}

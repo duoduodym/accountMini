@@ -1,5 +1,5 @@
 
-.applyList{
+.list-wrap{
   margin-top: 240rpx;
 }
 .search-list{

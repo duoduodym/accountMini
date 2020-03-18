@@ -8,14 +8,17 @@
     "pages/buyer/applyDetail/applyDetail",
     "pages/msgList/msgList",
     "pages/yser/ysList/ysList",
-    "pages/yser/createYs/createYs",
     "pages/boss/applyList/applyList",
     "pages/boss/applyDetail/applyDetail",
     "pages/boss/areaTotal/areaTotal",
     "pages/boss/cwDetail/cwDetai",
     "pages/boss/yearCw/yearCw",
     "pages/boss/yearCwDetail/yearCwDetail",
-    "pages/cn/applyList/applyList"
+    "pages/cn/applyList/applyList",
+    "pages/cn/applyDetail/applyDetail",
+    "pages/kj/applyList/applyList",
+    "pages/kj/applyDetail/applyDetail",
+    "pages/yser/ysDetail/ysDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

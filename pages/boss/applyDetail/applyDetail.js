@@ -1,68 +1,19 @@
-// pages/buyer/createApply/createApply.js
-Page({
 
-  /**
-   * 页面的初始数据
-   */
+Page({
   data: {
+    state:'',
     ddSrc: '/images/dd.png',
+    arrowSrc: '/images/arrow.png',
     infoObj: {
       imgList: []
     },
-    itemSrc: '/images/apply-img.png',
-    addSrc: '/images/add.png',
-    delSrc: '/images/del.png',
-    fromtype: ''
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
-    if (options.fromtype) {
+    if (options.state) {
       this.setData({
-        fromtype: options.fromtype
+        state: options.state
       })
     }
-  },
-  bindDateChange(e) {
-    this.setData({
-      'infoObj.applyTime': e.detail.value
-    })
-  },
-  addImg() {
-    const _this = this
-    wx.chooseImage({
-      count: 9,
-      sizeType: ['original', 'compressed'],
-      sourceType: ['album', 'camera'],
-      success(res) {
-        // tempFilePath可以作为img标签的src属性显示图片
-        const tempFilePaths = res.tempFilePaths
-        console.log(tempFilePaths)
-        let arr = _this.data.infoObj.imgList
-        arr.push(...tempFilePaths)
-        if (arr.length > 9) {
-          wx.showToast({
-            title: '图片不能超过9张',
-            icon: 'none'
-          })
-        }
-        arr = arr.slice(0, 9)
-        _this.setData({
-          'infoObj.imgList': arr
-        })
-      }
-    })
-
-  },
-  ondel(e) {
-    const idx = e.target.dataset.idx
-    let arr = this.data.infoObj.imgList
-    arr = arr.filter((v, index) => index != idx)
-    this.setData({
-      'infoObj.imgList': arr
-    })
   },
   onPrevies(e) {
     const idx = e.target.dataset.idx

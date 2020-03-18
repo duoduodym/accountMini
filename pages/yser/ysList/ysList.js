@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    isSearching:false,
     ysList:[],
     tabList:[{
       value:1,
@@ -37,12 +38,38 @@ Page({
   onReachBottom: function () {
     console.log('我出发了')
   },
-  onCreate(){
-    wx.navigateTo({
-      url: '/pages/yser/createYs/createYs',
+ 
+  closeResult() {
+    this.setData({
+      isSearching: false
     })
   },
-  onSearch(){
-    console.log(33333)
+  onSearch() {
+    this.setData({
+      isSearching: true
+    })
+  },
+  clearSearch() {
+    this.setData({
+      applyList2: []
+    })
+  },
+  closeResult() {
+    this.setData({
+      isSearching: false,
+      applyList2: []
+    })
+  },
+  createApply(){
+    wx.navigateTo({
+      url: '/pages/yser/ysDetail/ysDetail',
+    })
+  },
+  clickitem(e){
+    console.log(111111111111)
+    const state = e.detail.state
+    wx.navigateTo({
+      url: `/pages/yser/ysDetail/ysDetail?state=${state}`,
+    })
   }
 })

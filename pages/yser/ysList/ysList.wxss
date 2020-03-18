@@ -1,1 +1,23 @@
-@import "../../../common/item-list.wxss"
+.new-btn {
+  position: fixed;
+  bottom: 30rpx;
+  left: 50%;
+  margin-left: -300rpx;
+  font-size: 32rpx;
+}
+
+.applyList {
+  margin-top: 240rpx;
+}
+
+.search-list {
+  margin-top: 120rpx;
+}
+
+.new-btn {
+  position: fixed;
+  bottom: 30rpx;
+  left: 50%;
+  margin-left: -300rpx;
+  font-size: 32rpx;
+}

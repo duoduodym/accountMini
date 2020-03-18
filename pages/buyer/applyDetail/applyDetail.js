@@ -1,6 +1,5 @@
 const datas = require('../../../libs/testDates.js')
 Page({
-
   /**
    * 页面的初始数据
    */

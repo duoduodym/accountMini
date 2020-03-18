@@ -1,11 +1,11 @@
 {
   "usingComponents": {
-      "fakeSearch": "/components/fakeSearch/fakeSearch",
-      "tabs": "/components/tabs/tabs",
-      "ysListItem": "/components/ysListItem/ysListItem",
-      "reasonList": "/components/reasonList/reasonList"
+    "fakeSearch": "/components/fakeSearch/fakeSearch",
+    "realSearch": "/components/realSearch/realSearch",
+    "tabs": "/components/tabs/tabs",
+    "ysListItem": "/components/ysListItem/ysListItem"
   },
-    "navigationBarBackgroundColor": "#06bebe",
-    "navigationBarTitleText": "营收单列表",
-    "navigationBarTextStyle": "white"
+  "navigationBarBackgroundColor": "#06bebe",
+  "navigationBarTitleText": "营收单列表",
+  "navigationBarTextStyle": "white"
 }
