@@ -1,3 +1,6 @@
 .item-wrap{
   height:120rpx;
 }
+.container{
+  padding: 20rpx;
+}

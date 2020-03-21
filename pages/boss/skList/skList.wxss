@@ -1,0 +1,11 @@
+.item-list{
+  width: 100%;
+}
+.arrow{
+  width: 21rpx;
+  height: 43rpx;
+  position: absolute;
+  right:20rpx;
+  top:50%;
+  margin-top: -21rpx;
+}

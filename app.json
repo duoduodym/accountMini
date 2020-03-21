@@ -18,7 +18,13 @@
     "pages/cn/applyDetail/applyDetail",
     "pages/kj/applyList/applyList",
     "pages/kj/applyDetail/applyDetail",
-    "pages/yser/ysDetail/ysDetail"
+    "pages/yser/ysDetail/ysDetail",
+    "pages/cn/ysList/ysList",
+    "pages/cn/cwDetail/cwDetail",
+    "pages/boss/skList/skList",
+    "components/zcItem/zcItem",
+    "pages/boss/monthDetail/monthDetail",
+    "pages/areatotal/areaTotal"
   ],
   "window": {
     "backgroundTextStyle": "light",

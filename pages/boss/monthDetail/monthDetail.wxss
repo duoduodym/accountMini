@@ -1,13 +1,7 @@
-.item-list{
-  width: 100%;
-}
 .container{
   padding: 20rpx;
 }
-.month-item{
+.item-wrap{
   height:100rpx;
   border-bottom:1rpx solid #e5e5e5;
-}
-.arrow{
-  margin-left: 10rpx;
 }

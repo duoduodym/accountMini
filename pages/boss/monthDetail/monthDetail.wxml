@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="item-wrap">
+    <text>本月利润</text>
+    <text>￥3000</text>
+  </view>
+  <view class="item-wrap">
+    <text>本月现金</text>
+    <text>￥3000</text>
+  </view>
+  <view class="item-wrap" bindtap="goSkList">
+    <view>
+      <text>应收款:</text>
+    </view>
+    <view class="inner-wrap">
+      <text class="  ml-20">￥200000</text>
+      <image class="arrow" src="{{arrowSrc}}"></image>
+    </view>
+  </view>
+  <view class="item-wrap" bindtap="goSkList">
+    <view>
+      <text>实收款:</text>
+    </view>
+    <view class="inner-wrap">
+      <text class=" ml-20">￥200000</text>
+      <image class="arrow" src="{{arrowSrc}}"></image>
+    </view>
+  </view>
+  <view class="item-wrap" bindtap="goZcList">
+    <view>
+      <text>支出:</text>
+    </view>
+    <view class="inner-wrap">
+      <text class=" ml-20">￥200000</text>
+      <image class="arrow" src="{{arrowSrc}}"></image>
+    </view>
+  </view>
+</view>

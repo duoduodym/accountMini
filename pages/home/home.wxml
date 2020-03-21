@@ -1,47 +1,43 @@
 <view class="container ">
   <view class="item-wrap fc-30">
-    <view class="item" bindtap="goApplyList" wx:if="{{showApplyBuyer}}" data-type="{{'buyer'}}">
+    <view class="item" bindtap="goApplyList" wx:if="{{showApplyBuyer}}" data-type="buyer">
       <image class="item-img" src="{{applySrc}}"></image>
       <text class="item-name fc-6">报销(采购)</text>
     </view>
-    <view class="item" bindtap="goApplyList" data-type="{{'cn'}}" wx:if="{{showApplyCn}}">
+    <view class="item" bindtap="goApplyList" data-type="cn" wx:if="{{showApplyCn}}">
       <image class="item-img" src="{{applySrc}}"></image>
       <text class="item-name fc-6">报销(出纳)</text>
     </view>
 
-    <view class="item" bindtap="goApplyList" wx:if="{{showApplyLb}}" data-type="{{'lb'}}">
+    <view class="item" bindtap="goApplyList" wx:if="{{showApplyLb}}" data-type="lb">
       <image class="item-img" src="{{applySrc}}"></image>
       <text class="item-name fc-6">报销(老板)</text>
     </view>
-    <view class="item" bindtap="goApplyList" wx:if="{{showApplyKj}}" data-type="{{'kj'}}">
+    <view class="item" bindtap="goApplyList" wx:if="{{showApplyKj}}" data-type="kj">
       <image class="item-img" src="{{applySrc}}"></image>
       <text class="item-name fc-6">报销(会计)</text>
     </view>
-    <view class="item" bindtap="goYsList" wx:if="{{showYsYs}}" data-type="{{'ys'}}">
+    <view class="item" bindtap="goYsList" wx:if="{{showYsYs}}" data-type="ys">
       <image class="item-img" src="{{walletSrc}}"></image>
       <text class="item-name fc-6">营收(营收)</text>
     </view>
-    <view class="item" bindtap="goApplyList" wx:if="{{showYsCn}}">
+    <view class="item" bindtap="goYsList" wx:if="{{showYsCn}}" data-type="cn">
       <image class="item-img" src="{{walletSrc}}"></image>
       <text class="item-name fc-6">营收(出纳)</text>
-    </view>
-    <view class="item" bindtap="goApplyList" wx:if="{{showYsLb}}">
-      <image class="item-img" src="{{walletSrc}}"></image>
-      <text class="item-name fc-6">营收(老板)</text>
     </view>
     <view class="item" bindtap="goApplyList" wx:if="{{showYsKj}}">
       <image class="item-img" src="{{walletSrc}}"></image>
       <text class="item-name fc-6">营收(会计)</text>
     </view>
-    <view class="item" bindtap="goApplyList" wx:if="{{showCwCn}}">
+    <view class="item" bindtap="goCw" wx:if="{{showCwCn}}" data-type="ys">
       <image class="item-img" src="{{cwSrc}}"></image>
       <text class="item-name fc-6">财务(出纳)</text>
     </view>
-    <view class="item" bindtap="goCwLb" wx:if="{{showCwLb}}">
+    <view class="item" bindtap="goCw" wx:if="{{showCwLb}}" data-type="lb">
       <image class="item-img" src="{{cwSrc}}"></image>
       <text class="item-name fc-6">财务(老板)</text>
     </view>
-    <view class="item" bindtap="goApplyList" wx:if="{{showBbKj}}">
+    <view class="item" bindtap="goAreaTotal" wx:if="{{showBbKj}}" data-type="kj">
       <image class="item-img" src="{{bbSrc}}"></image>
       <text class="item-name fc-6">报表(会计)</text>
     </view>

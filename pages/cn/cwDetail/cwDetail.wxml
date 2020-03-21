@@ -1,0 +1,7 @@
+<view class="container ">
+     <view class="total-item blue">
+        <text class="num">￥3000</text>
+        <text class="num name">总账面现金</text>
+        <image class="qb-img qb2" src="{{qb2Src}}"></image>
+      </view>
+</view>

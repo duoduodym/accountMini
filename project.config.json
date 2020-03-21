@@ -211,6 +211,62 @@
 					"id": -1,
 					"name": "pages/yser/ysDetail/ysDetail",
 					"pathName": "pages/yser/ysDetail/ysDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cn/ysList/ysList",
+					"pathName": "pages/cn/ysList/ysList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cn/cwDetail/cwDetail",
+					"pathName": "pages/cn/cwDetail/cwDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/boss/skList/skList",
+					"pathName": "pages/boss/skList/skList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/boss/yearCwDetail/yearCwDetail",
+					"pathName": "pages/boss/yearCwDetail/yearCwDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/boss/monthDetail/monthDetail",
+					"pathName": "pages/boss/monthDetail/monthDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/areaTotal/areaTotal",
+					"pathName": "pages/areaTotal/areaTotal",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/areatotal/areaTotal",
+					"pathName": "pages/areatotal/areaTotal",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/msg/msg",
+					"pathName": "pages/msg/msg",
 					"scene": null
 				}
 			]

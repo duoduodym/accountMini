@@ -1,3 +1,6 @@
 <view class="container">
+  <view class="item-list">
     <homeMsgItem />
+  </view>
+    
 </view>

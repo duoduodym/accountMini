@@ -1,6 +1,6 @@
 {
   "usingComponents": {},
+  "navigationBarTitleText": "区间财务",
   "navigationBarBackgroundColor": "#06bebe",
-  "navigationBarTitleText": "营收详情",
   "navigationBarTextStyle": "white"
 }

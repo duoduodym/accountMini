@@ -1,0 +1,32 @@
+
+<wxs src="./ysListItemCn.wxs" module="tools" />
+<view class="list-item" bindtap="clickitem" data-item="{{ysListItemCn}}">
+  <movable-area>
+    <movable-view damping="20" out-of-bounds="true" direction="horizontal" x="{{x}}" animation="false" friction="{{1}}">
+      <view class="main_item_content " bindtap="cancelDel">
+        <view class="tag">
+          <text>{{tools.formatState(ysListItemCn.state)}}</text>
+        </view>
+        <view class="main-wrap">
+          <view class="item-wrap ">
+            <text>名称：</text>
+            <text>{{ysListItemCn.name}}</text>
+          </view>
+          <view class="item-wrap">
+            <text>应收金额：</text>
+            <text class="price">￥{{ysListItemCn.ysPrice}}</text>
+          </view>
+          <view class="item-wrap price-wrap">
+            <view>
+              <text>实收金额：</text>
+              <text class="fc-r">￥{{ysListItemCn.ssPrice}}</text>
+            </view>
+            <text class="apply-time fc-6">{{ysListItemCn.startTime}}</text>
+          </view>
+        </view>
+        <image class="arrow" src="{{arrowSrc}}"></image>
+      </view>
+    </movable-view>
+  </movable-area>
+  <view class="delete_btn " bindtap="handleDeleteProduct " bindtap="del">删除</view>
+</view>

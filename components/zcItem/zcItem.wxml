@@ -1,0 +1,19 @@
+<view class="list-item" bindtap="clickitem" data-item="{{zcItem}}">
+    <view class="main-wrap">
+      <view class="item-wrap">
+        <text>款项:</text>
+        <text>{{zcItem.name}}</text>
+      </view>
+      <view class="item-wrap">
+        <text>支出金额:</text>
+        <text>￥{{zcItem.ysPrice}}</text>
+      </view>
+      <view class="item-wrap price-wrap">
+        <view c>
+          <text>支出日期:</text>
+        </view>
+        <text class="apply-time fc-6">{{zcItem.sTime}}</text>
+      </view>
+    </view>
+    <image class="arrow" src="{{arrowSrc}}"></image>
+</view>

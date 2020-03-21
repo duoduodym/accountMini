@@ -145,10 +145,37 @@ const payList = [
     applyTime: '2020-04-03'
   },
 ]
+const skList = [
+  {
+    name:'收账2000',
+    ysPrice:'3000',
+    ssPrice:'2000',
+    sTime:'2020-03-03'
+  },
+  {
+    name: '收账3000',
+    ysPrice: '3000',
+    ssPrice: '2000',
+    sTime: '2020-03-03'
+  },
+  {
+    name: '收账4000',
+    ysPrice: '3000',
+    ssPrice: '2000',
+    sTime: '2020-03-03'
+  },
+  {
+    name: '收账5000',
+    ysPrice: '3000',
+    ssPrice: '2000',
+    sTime: '2020-03-03'
+  }
+]
 module.exports = {
   applyList: applyList,
   ysList: ysList,
   monthList: monthList,
   categoryList: categoryList,
-  payList: payList
+  payList: payList,
+  skList: skList
 }

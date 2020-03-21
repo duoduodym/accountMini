@@ -46,7 +46,15 @@
         <div class="itemempty"></div>
       </view>
     </view>
-    <view class="btn-wrap" wx:if="state == 1">
+     <view class="item-wrap">
+      <text>状态:</text>
+      <text>被拒收</text>
+    </view>
+    <view class="item-wrap" wx:if="{{state == 3}}">
+      <text>被拒收原因:</text>
+      <text>金额太低</text>
+    </view>
+    <view class="btn-wrap" wx:if="{{state == 1 || state == -1}}">
       <view class='btn save-btn'>暂存</view>
       <view class='btn confirm-btn'>提交</view>
     </view>

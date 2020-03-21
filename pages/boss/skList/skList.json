@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "skItem": "/components/skItem/skItem",
+    "zcItem": "/components/zcItem/zcItem"
+  },
+    "navigationBarBackgroundColor": "#06bebe",
+    "navigationBarTitleText": "应收款列表",
+    "navigationBarTextStyle": "white"
+}

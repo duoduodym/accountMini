@@ -20,6 +20,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(options)
     if (options.state){
       this.setData({
         state: options.state
@@ -30,7 +31,7 @@ Page({
   setState(state){
     if(!state){
       this.setData({
-        state:'1'
+        state:'-1'
       })
     }
     if(state == '2' || state == '4'){

@@ -1,11 +1,11 @@
-<view class="container bg-f">
+<view class="container">
   <view class="list-wrap w-100">
     <view class="item-wrap bd-bottom" 
     bindtap="goYearDetail"
     wx:for="{{yearCwList}}" wx:key="item.id">
        <text>{{item.name}}</text>
        <view class="inner-wrap">
-           <text>查看明细</text>
+           <text class="fc-9">查看明细</text>
            <image class="arrow ml-20" src="{{arrowSrc}}"></image>
        </view>
       

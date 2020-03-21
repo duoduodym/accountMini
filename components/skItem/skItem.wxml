@@ -1,0 +1,20 @@
+<view class="list-item" bindtap="clickitem" data-item="{{skItem}}">
+    <view class="main-wrap">
+      <view class="item-wrap">
+        <text>款项:</text>
+        <text>{{skItem.name}}</text>
+      </view>
+      <view class="item-wrap">
+        <text>应收款:</text>
+        <text>￥{{skItem.ysPrice}}</text>
+      </view>
+      <view class="item-wrap price-wrap">
+        <view c>
+          <text>实收款:</text>
+          <text class="fc-r">￥{{skItem.ssPrice}}</text>
+        </view>
+        <text class="apply-time fc-6">{{skItem.sTime}}</text>
+      </view>
+    </view>
+    <image class="arrow" src="{{arrowSrc}}"></image>
+</view>

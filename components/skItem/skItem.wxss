@@ -1,0 +1,12 @@
+@import "../../common/list-item.wxss";
+.list-item{
+  align-items: center;
+  padding:20rpx;
+  height: auto !important;
+}
+.list-item{
+  margin: 0
+}
+.main-wrap{
+  width: 100%;
+}

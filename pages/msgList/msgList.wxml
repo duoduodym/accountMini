@@ -1,3 +1,6 @@
 <view class="container">
-    <msgListItem wx:for="{{msgList}}" item="{{item}}"/>
+   <view class="item-list">
+     <msgListItem wx:for="{{msgList}}" item="{{item}}"/>
+   </view>
+    
 </view>

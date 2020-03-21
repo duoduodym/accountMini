@@ -87,9 +87,30 @@ Page({
     let url = ''
     if (type == 'ys') {
       url ="/pages/yser/ysList/ysList"
+    } else if (type == 'cn'){
+      url = "/pages/cn/ysList/ysList"
     }
+    console.log(url)
     wx.navigateTo({
       url
+    })
+  },
+  goCw(e){
+    const type = e.currentTarget.dataset.type
+    let url = ''
+    if (type == 'ys') {
+      url = "/pages/cn/cwDetail/cwDetail"
+    } else if (type == 'lb') {
+      url = "/pages/boss/cwDetail/cwDetai"
+    }
+    console.log(url)
+    wx.navigateTo({
+      url
+    })
+  },
+  goAreaTotal(e){
+    wx.navigateTo({
+      url:'/pages/areatotal/areaTotal'
     })
   }
 })

@@ -1,15 +1,16 @@
-const datas = require('../../../libs/testDates.js')
+const datas = require('../../libs/testDates.js')
 Page({
+
   data: {
-    currentYear:'',
-    startTime:'',
-    endTime:'',
-    delSrc:'/images/delete.png',
-    monthList:[],
-    monthStart:0,
-    selMonth:'',
-    isRun:false,
-    arrowSrc:'/images/arrow.png'
+    currentYear: '',
+    startTime: '',
+    endTime: '',
+    delSrc: '/images/delete.png',
+    monthList: [],
+    monthStart: 0,
+    selMonth: '',
+    isRun: false,
+    arrowSrc: '/images/arrow.png'
   },
   onLoad: function (options) {
     this.setData({
@@ -18,59 +19,59 @@ Page({
     this.getYear()
     this.isRunYear()
   },
-  getYear(){
+  getYear() {
     const year = new Date().getFullYear()
     this.setData({
-      currentYear:year
+      currentYear: year
     })
   },
-  isRunYear(){
+  isRunYear() {
     const year = new Date().getFullYear()
     if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
       this.isRun = true
-    }else {
+    } else {
       this.isRun = false
     }
   },
-  changeStartTime(e){
+  changeStartTime(e) {
     this.setData({
-      startTime:e.detail.value
+      startTime: e.detail.value
     })
   },
-  clearStartTime(){
+  clearStartTime() {
     this.setData({
-      startTime:''
+      startTime: ''
     })
   },
-  clearEndTime(){
+  clearEndTime() {
     this.setData({
       endTime: ''
     })
   },
-  changeEndTime(e){
+  changeEndTime(e) {
     this.setData({
       endTime: e.detail.value
     })
   },
-  changeMonth(e){
+  changeMonth(e) {
     let er = ''
     const val = e.detail.value
     const month = this.data.monthList[val]
     this.setData({
       selMonth: month
     })
-    if(month == '一月'){
+    if (month == '一月') {
       this.setData({
-        startTime:`${this.data.currentYear}-01-01`,
+        startTime: `${this.data.currentYear}-01-01`,
         endTime: `${this.data.currentYear}-01-31`
       })
     } else if (month == '二月') {
       this.setData({
         startTime: `${this.data.currentYear}-01-01`,
       })
-      if(this.isRun){
+      if (this.isRun) {
         er = `${this.data.currentYear}-02-28`
-      }else{
+      } else {
         er = `${this.data.currentYear}-02-29`
       }
       this.setData({
@@ -84,19 +85,19 @@ Page({
 
     }
   },
-  clearMonth(){
+  clearMonth() {
     this.setData({
-      startTime:'',
-      endTime:'',
-      selMonth:''
+      startTime: '',
+      endTime: '',
+      selMonth: ''
     })
   },
-  goSkList(){
+  goSkList() {
     wx.navigateTo({
       url: '/pages/boss/skList/skList?fromType=ys',
     })
   },
-  goZcList(){
+  goZcList() {
     wx.navigateTo({
       url: '/pages/boss/skList/skList?fromType=zc',
     })

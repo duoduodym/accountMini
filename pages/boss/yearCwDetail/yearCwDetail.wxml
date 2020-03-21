@@ -1,3 +1,12 @@
 <view class="container">
-  <view class="item-wrap"></view>
+  <view class="item-list">
+    <view class="month-item item-wrap" wx:for="{{monthList}}" bindtap="goMonthDetail">
+      <text>{{item.name}}</text>
+      <view class="inner-wrap">
+        <text class="fc-9">查看明细</text>
+        <image class="arrow" src="{{arrowSrc}}"></image>
+      </view>
+
+    </view>
+  </view>
 </view>

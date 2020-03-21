@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="item-list" wx:if="{{fromType=='ys'}}">
+     <skItem wx:for="{{skList}}" skItem="{{item}}"
+    bind:clickItem="clickItem" wx:key="index" ></skItem>
+  </view>
+  <view class="item-list" wx:if="{{fromType=='zc'}}">
+     <zcItem wx:for="{{skList}}" zcItem="{{item}}"
+    bind:clickItem="clickItem" wx:key="index" ></zcItem>
+  </view>
+</view>
