@@ -5,7 +5,7 @@
     <view class="info-wrap">
       <text>{{item.from}}</text>
       <view>
-        <text>{{item.name}}</text>
+        <text class="name">{{item.name}}</text>
         <text class="{{item.status == 0 ? 'noPass' : 'passed'}}">{{tools.formatState(item.status)}}</text>
       </view>
     </view>

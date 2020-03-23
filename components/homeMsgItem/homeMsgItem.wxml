@@ -1,10 +1,10 @@
-<view class="msgItem" bindtap="goMsgList">
+<view class="msgItem" bindtap="goList">
   <view class="item-wrap fc-30 fc-6">
     <image class="item-img" src="{{itemSrc}}"></image>
-    <text>申报消息</text>
+    <text>{{msgType}}</text>
   </view>
   <view class="item-wrap fc-30 fc-6">
-    <view class="round-text fc-f">9</view>
+    <view class="round-text fc-f">{{num}}</view>
     <image class="arrow" src="{{arrowSrc}}"></image>
   </view>
 </view>

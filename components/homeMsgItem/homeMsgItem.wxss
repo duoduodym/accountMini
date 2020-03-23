@@ -7,8 +7,8 @@
   width: 100%;
 }
 .item-img{
-  width: 70rpx;
-  height:70rpx;
+  width: 60rpx;
+  height:60rpx;
   margin-right: 20rpx;
 }
 .item-wrap{

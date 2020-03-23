@@ -6,62 +6,51 @@ Page({
    */
   data: {
     itemSrc:'/images/apply.png',
-    arrowSrc:'/images/arrow.png'
+    arrowSrc:'/images/arrow.png',
+    showBuyer:false,
+    showYs:false,
+    showCnDk:false,
+    showCnSk:false,
+    showLb:false,
+    showKjZc:false,
+    showKjSr:false,
+    roles:'buyer,ys,cn,lb,kj'
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    if (this.data.roles.includes('buyer')){
+      this.setData({
+        showBuyer:true
+      })
+    }
+    if (this.data.roles.includes('ys')) {
+      this.setData({
+        showYs: true
+      })
+    }
+    if (this.data.roles.includes('cn')) {
+      this.setData({
+        showCnDk: true,
+        showCnSk:true
+      })
+    }
+    if (this.data.roles.includes('lb')) {
+      this.setData({
+        showLb: true
+      })
+    }
+    if (this.data.roles.includes('kj')) {
+      this.setData({
+        showKjZc: true,
+        showKjSr:true
+      })
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  goList(e){
+    wx.navigateTo({
+      url: '/pages/msgList/msgList',
+    })
   }
 })

@@ -1,6 +1,23 @@
 <view class="container">
-  <view class="item-list">
-    <homeMsgItem />
+  <view class="item-list" wx:if="{{showBuyer}}">
+    <homeMsgItem type="buyer" bind:goList="goList" num="9" data-type="buyer" />
   </view>
-    
+  <view class="item-list" wx:if="{{showYs}}">
+    <homeMsgItem type="ys" bind:goList="goList" data-type="ys" num="6" />
+  </view>
+  <view class="item-list" wx:if="{{showCnDk}}">
+    <homeMsgItem type="cnDk" bind:goList="goList" num="9" data-type="cnDk" />
+  </view>
+  <view class="item-list" wx:if="{{showCnSk}}">
+    <homeMsgItem type="cnSk" bind:goList="goList" num="9" data-type="cnSk" />
+  </view>
+   <view class="item-list" wx:if="{{showLb}}">
+    <homeMsgItem type="lb" bind:goList="goList" num="9" data-type="lb" />
+  </view>
+  <view class="item-list" wx:if="{{showKjZc}}">
+    <homeMsgItem type="KjZc" bind:goList="goList" num="9" data-type="KjZc" />
+  </view>
+  <view class="item-list" wx:if="{{showKjSr}}">
+    <homeMsgItem type="KjSr" bind:goList="goList" num="9" data-type="KjSr" />
+  </view>
 </view>

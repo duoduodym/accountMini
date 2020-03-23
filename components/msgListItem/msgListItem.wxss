@@ -27,5 +27,8 @@
   margin-left: 30rpx;
 }
 .noRead{
-  color:red
+  color:red !important;
+}
+.name{
+  margin-right: 20rpx;
 }
