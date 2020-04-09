@@ -1,7 +1,10 @@
 <view class="msgItem" bindtap="goList">
   <view class="item-wrap fc-30 fc-6">
     <image class="item-img" src="{{itemSrc}}"></image>
-    <text>{{msgType}}</text>
+    <view class="text-wrap">
+       <text>{{role}}</text>
+       <text class="fc-6">{{msgType}}</text>
+    </view> 
   </view>
   <view class="item-wrap fc-30 fc-6">
     <view class="round-text fc-f">{{num}}</view>

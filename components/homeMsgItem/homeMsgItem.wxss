@@ -8,8 +8,8 @@
 }
 .item-img{
   width: 60rpx;
-  height:60rpx;
-  margin-right: 20rpx;
+  height:56rpx;
+  margin-right: 40rpx;
 }
 .item-wrap{
   display: flex;
@@ -29,4 +29,10 @@
   line-height: 46rpx;
   font-size: 26rpx;
   color: #fff;
+}
+.text-wrap text{
+  display: block;
+}
+.fc-6{
+  color: #666;
 }

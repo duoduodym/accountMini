@@ -10,7 +10,9 @@
      wx:key="index" />
   </view>
    <view class="search-list" wx:if="{{isSearching}}">
-    <applyItem wx:for="{{applyList2}}" applyItem="{{item}}" wx:key="index" />
+    <applyItem wx:for="{{applyList2}}" applyItem="{{item}}" 
+    bind:clickItem="clickItem"
+    wx:key="index" />
   </view>
  <button
   class='big-btn new-btn'

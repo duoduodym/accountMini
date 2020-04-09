@@ -11,8 +11,7 @@ const applyItemBev = Behavior({
     },
     clickitem(e) {
       const item = e.currentTarget.dataset.item
-      console.log(item)
-      this.triggerEvent('clickitem', item)
+      this.triggerEvent('clickItem', item)
     }
   }
 })
